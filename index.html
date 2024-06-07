@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">The Weather</h3>
+            <div>
+                <h1 class="temp">34&#176;&emsp;&emsp;</h1>
+                <div class="city-time">
+                    <h1 class="name">Patna</h1>
+                    <small>
+                        <span class="time">20:21</span>
+                        
+                        <span class="date">Saturday Jun 1</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img
+                    src="./day/sunny.png"
+                    class="icon"
+                    width="50"
+                    height="50"
+                    />
+                    <span class="condition">Cloudy</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input
+                    type="text"
+                    class="search"
+                    placeholder="Search Location..."
+                />
+                <button type="submit" class="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">Saharsa</li>
+                <li class="city">Darbhanga</li>
+                <li class="city">Gaya</li>
+                <li class="city">Bhagalpur</li>
+                <li class="city">Muzaffarpur</li>
+                <li class="city">Purnia</li>
+            </ul>
+            <ul class="details">
+                <h4>Weather Details</h4>
+                <li>
+                    <span><i class="fa-solid fa-cloud"></i>&nbsp;Cloudly&nbsp;:&nbsp;</span>
+                    <span class="cloud">7%</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-droplet"></i>&nbsp;Humidity&nbsp;:&nbsp;</span>
+                    <span class="humidity">77%</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-wind"></i>&nbsp;Wind&nbsp;:&nbsp;</span>
+                    <span class="wind">9km/h</span>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-temperature-half"></i>&nbsp;Feels Like&nbsp;:&nbsp;</span>
+                    <span class="feels-like">40&#176;</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

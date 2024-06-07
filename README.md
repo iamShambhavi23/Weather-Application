@@ -1,1 +1,2 @@
 # Weather-Application
+Developing a weather application using HTML, CSS, JavaScript, and an external weather API. The app provides real-time weather data for a specified location, displaying current temperature, weather conditions, and "feels like" temperature with images that change based on weather and time of day. The user-friendly interface allows users to input their location to receive updated weather information.
