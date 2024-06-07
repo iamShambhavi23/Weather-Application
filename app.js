@@ -14,7 +14,6 @@ let search = document.querySelector(".search");
 let btn = document.querySelector(".submit");
 let cities = document.querySelectorAll(".city");
 
-
 // Default city when the page loads
 let cityInput = "Patna";
 
@@ -62,8 +61,8 @@ function fetchWeatherData() {
             dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} (${d} - ${m} - ${y})`;
             timeOutput.innerHTML = time;
             nameOutput.innerHTML = data.location.name;
-            const iconId = data.current.condition.icon.split("/").pop();
-            icon.src = data.current.condition.icon.replace('http:', 'https:'); 
+            // Ensure the icon uses HTTPS
+            icon.src = data.current.condition.icon.replace('http:', 'https:');
             cloudOutput.innerHTML = data.current.cloud + "%";
             humidityOutput.innerHTML = data.current.humidity + "%";
             windOutput.innerHTML = data.current.wind_kph + "km/h";
